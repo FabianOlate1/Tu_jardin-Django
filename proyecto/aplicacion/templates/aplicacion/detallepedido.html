@@ -1,0 +1,139 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+
+{% block contenido %}
+<body>
+
+  
+</header><!--/header-->
+
+<section id="cart_items">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Verificar</li>
+            </ol>
+        </div><!--/breadcrums-->
+
+        <div class="step-one">
+            <h2 class="heading">Paso 1</h2>
+        </div>
+        <div class="checkout-options">
+            <h3>Nuevo Usuario</h3>
+            <p>Opciones de pago</p>
+            <ul class="nav">
+                <li>
+                    <label><input type="checkbox"> Registrar Cuenta</label>
+                </li>
+                <li>
+                    <label><input type="checkbox"> Pago como invitado</label>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-times"></i>Cancelar</a>
+                </li>
+            </ul>
+        </div><!--/checkout-options-->
+
+        <div class="register-req">
+            <p>Use Registrarse y pagar para obtener acceso fácilmente a su historial de pedidos, o use el pago como invitado</p>
+        </div><!--/register-req-->
+
+        <div class="shopper-informations">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="shopper-info">
+                        <p>Información del comprador</p>
+                        <form>
+                            <input type="text" placeholder="Nombre para mostrar">
+                            <input type="text" placeholder="Nombre de Usuario">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirmacion de password">
+                        </form>
+                        <a class="btn btn-primary" href="">Get Quotes</a>
+                        <a class="btn btn-primary" href="">Continuar</a>
+                    </div>
+                </div>
+                <div class="col-sm-5 clearfix">
+                    <div class="bill-to">
+                        <p>Cobrar a</p>
+                        <div class="form-one">
+                            <form>
+                                <input type="text" placeholder="Nombre campañia">
+                                <input type="text" placeholder="Email*">
+                                <input type="text" placeholder="Titulo">
+                                <input type="text" placeholder="Primer Nombre *">
+                                <input type="text" placeholder="Segundo Nombre">
+                                <input type="text" placeholder="Apellido *">
+                                <input type="text" placeholder="Direccion *">
+
+                            </form>
+                        </div>
+                        <div class="form-two">
+                            <form>
+                                <input type="text" placeholder="Zip / Postal Code *">
+                                <select>
+                                    <option>-- Pais --</option>
+                                    <option>United States</option>
+                                    <option>Chile</option>
+                                    <option>UK</option>
+                                    <option>India</option>
+                                    <option>Pakistan</option>
+                                    <option>Ucrane</option>
+                                    <option>Canada</option>
+                                    <option>Dubai</option>
+                                </select>
+                                <select>
+                                    <option>-- Estado / Provincia / Region --</option>
+                                    <option>United States</option>
+                                    <option>Chile</option>
+                                    <option>UK</option>
+                                    <option>India</option>
+                                    <option>Pakistan</option>
+                                    <option>Ucrane</option>
+                                    <option>Canada</option>
+                                    <option>Dubai</option>
+                                </select>
+                                <input type="password" placeholder="Confirmacion de password">
+                                <input type="text" placeholder="Telefono *">
+                                <input type="text" placeholder="Celular">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="order-message">
+                        <p>Orden de envío</p>
+                        <textarea name="message"  placeholder="Notas sobre su pedido, Notas especiales para la entrega" rows="16"></textarea>
+                        <label><input type="checkbox"> Envío a la dirección de facturación</label>
+                    </div>	
+                </div>					
+            </div>
+        </div>
+
+        <div class="payment-options">
+                <span>
+                    <label><input type="checkbox"> Transferencia bancaria directa</label>
+                </span>
+                <span>
+                    <label><input type="checkbox"> Cheque Pago</label>
+                </span>
+                <span>
+                    <label><input type="checkbox"> Paypal</label>
+                </span>
+            </div>
+    </div>
+    
+
+</section> <!--/#cart_items-->
+
+<script src="js/jquery.js"></script>
+<script src="js/price-range.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+{% endblock contenido %}

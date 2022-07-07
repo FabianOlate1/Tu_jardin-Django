@@ -1,0 +1,33 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+
+
+
+<section class="step-wizard">
+<ul class="step-wizard-list">
+    <li class="step-wizard-item">
+        <span class="progress-count">1</span>
+        <span class="progress-label">
+            Información de facturación</span>
+    </li>
+    <li class="step-wizard-item current-item">
+        <span class="progress-count">2</span>
+        <span class="progress-label">Metodo de pago</span>
+    </li>
+    <li class="step-wizard-item">
+        <span class="progress-count">3</span>
+        <span class="progress-label">Verificar</span>
+    </li>
+    <li class="step-wizard-item">
+        <span class="progress-count">4</span>
+        <span class="progress-label">Exito en la verificación</span>
+    </li>
+</ul>
+</section>  
+
+{% endblock contenido %}
+  
+ 
